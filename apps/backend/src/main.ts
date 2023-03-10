@@ -5,6 +5,15 @@
 
 import express from 'express';
 import cors from 'cors';
+import { sharedUtilFormatting } from '@esoft7s/shared/util-formatting';
+
+const user: User = {
+  name: "Nome",
+  age: 36,
+  birthday: new Date()
+}
+
+sharedUtilFormatting();
 
 const app = express();
 app.use(cors())

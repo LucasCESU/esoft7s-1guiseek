@@ -1,4 +1,6 @@
+import { sharedUtilFormatting } from '@esoft7s/shared/util-formatting';
 import './app.element.scss';
+sharedUtilFormatting();
 
 export class AppElement extends HTMLElement {
   public static observedAttributes = [];
